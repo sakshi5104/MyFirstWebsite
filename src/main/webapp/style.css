@@ -1,0 +1,409 @@
+
+/* ================= BODY ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
+    background: #fafafa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* NAV LINKS */
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* HOVER EFFECT */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff4d88;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #ff4d88;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: url("images/hero.jfif") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(255,77,136,0.5));
+}
+
+/* TEXT */
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.hero button {
+    padding: 12px 30px;
+    background: #ff4d88;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #e6005c;
+    transform: scale(1.08);
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about {
+    background: #ffffff;
+}
+
+#services {
+    background: #fff0f5;
+}
+
+/* ================= ABOUT FEATURES ================= */
+.about-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-features div {
+    background: #ff4d88;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ================= SERVICES ================= */
+.service-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    position: relative;
+    width: 260px;
+    height: 220px;
+    border-radius: 15px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+/* OVERLAY */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.3));
+    top: 0;
+    left: 0;
+}
+
+/* TEXT */
+.card h3,
+.card p {
+    position: relative;
+    z-index: 1;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* IMAGES */
+.hair { background-image: url("images/haircut.png"); }
+.skin { background-image: url("images/facial.webp"); }
+.makeup { background-image: url("images/makeup.jpg"); }
+
+/* ================= GALLERY ================= */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 240px;
+    margin: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= TESTIMONIALS ================= */
+#testimonials {
+    background: #f9f9f9;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.test-box {
+    background: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.test-box:hover {
+    transform: translateY(-8px);
+}
+
+.client-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: gold;
+    font-size: 16px;
+}
+
+/* ================= CONTACT ================= */
+#contact {
+    background: #fff0f5;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* LEFT */
+.contact-info {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* RIGHT */
+.contact-form {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.contact-form button {
+    background: #ff4d88;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    background: #25D366;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* FORM GROUP */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+/* LABEL */
+.input-group label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* INPUT */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff4d88;
+    box-shadow: 0 0 5px rgba(255,77,136,0.3);
+}
+
+/* TEXTAREA */
+.contact-form textarea {
+    height: 90px;
+    resize: none;
+}
+
+/* BUTTON */
+.contact-form button {
+    margin-top: 10px;
+    padding: 12px;
+
+    background: linear-gradient(135deg, #ff4d88, #ff1a66);
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255,77,136,0.4);
+}
+
+/* ================= FLOAT WHATSAPP ================= */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #111;
+    color: white;
+    padding: 15px;
+}
