@@ -109,14 +109,14 @@
         </div>
 
         <div class="test-box">
-            <img src="images/testimonial2.avif" class="client-img">
+            <img src="images/testimonial2.jpg" class="client-img">
             <p>"Best salon experience in town."</p>
             <div class="stars">★★★★★</div>
             <h4>- Sneha Bapat</h4>
         </div>
 
         <div class="test-box">
-            <img src="images/testimonial3.avif" class="client-img">
+            <img src="images/testimonial3.jpg" class="client-img">
             <p>"Very professional service and friendly staff."</p>
             <div class="stars">★★★★★</div>
             <h4>- Monika Singh</h4>
